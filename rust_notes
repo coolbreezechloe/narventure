@@ -1,0 +1,30 @@
+cargo new <project>
+cargo build
+cargo run
+
+rustup toolchain list
+    stable-armv7-unknown-linux-gnueabihf (default)
+    stable-x86_64-unknown-linux-gnu
+
+rustup toolchain remove stable-x86_64-gnu
+    info: uninstalling toolchain 'stable-x86_64-unknown-linux-gnu'
+    info: toolchain 'stable-x86_64-unknown-linux-gnu' uninstalled
+
+rustup toolchain install stable-x86_64-gnu
+    info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+    info: latest update on 2020-05-07, rust version 1.43.1 (8d69840ab 2020-05-04)
+    info: downloading component 'cargo'
+    info: downloading component 'clippy'
+    info: downloading component 'rust-docs'
+
+rustup doc           # command usage / help
+rustup doc --book    # the rust book
+
+#####
+# this is where the docs are, go there and start a simple webserver to read
+# them in your browswer
+
+cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book
+python3 -m http.server
+
+
