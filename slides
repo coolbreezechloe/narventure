@@ -1,3 +1,40 @@
+SETUP
+=====
+
+Windows
+-------
+
+1. Turn on windows subsytem for linux
+
+    Method1
+    *******
+
+    * Press windows key
+    * Type "Power Shell"
+    * Right click on the icon and select run as administrator
+    * Type
+        `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+    * You may need to restart the computer
+
+    Method2
+    *******
+
+    * press windows key
+    * type "windows features"
+    * press enter
+    * find "Windows Subsystem for Linux" in the list and select it
+    * Press OK
+    * May need to restart
+
+2. After reset install debian
+
+    * open microsoft store
+    * search for debian and install it
+    * open debian terminal and run command from
+        `https://rustup.rs`
+
+
+
 
 TERMS
 =====
