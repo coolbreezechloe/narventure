@@ -1,0 +1,27 @@
+
+TERMS
+=====
+
+rustaceans: rust-ah-kins, describes women who program in Rust
+
+Constants
+---------
+
+* Scope can be global
+* Use `const` keyword, it is not the same as an immutable variable
+* Naming Conventions. Typically all upper case with underscores for spaces
+* Not mutable
+* Must be annotated
+* Must be set to a constant expression, can not be the result of a function
+
+Shadowing
+---------
+
+* A new variable with same name as a perviously defined variable
+* Rustaceans say the first variable is shadowed by the second
+* <example>
+* can change the type
+* with let we can perform a few changes on a variable without having it
+  by mutable at the end
+
+
