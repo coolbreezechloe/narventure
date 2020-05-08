@@ -26,7 +26,7 @@ Windows
     * Press OK
     * May need to restart
 
-2. After reset install debian
+1. After reset install debian
 
     * open microsoft store
     * search for debian and install it
@@ -35,7 +35,24 @@ Windows
     * select "proceed with installation"
     * exit shell and re-start it
 
-3. Confirm installation with command `rustup toolchain --list`
+1. Confirm installation with command `rustup toolchain --list`
+1. Install Rust for windows
+   * go to https://www.rust-lang.org/tools/install
+   * if asked about installing Visual C++ Prerequisites say yes
+   * press 1 (proceed)
+1. Install Microsoft Visual C++ Build Tools (for PyCharm)
+    * Download file at https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    * Select C++ build tools
+    * click install
+    *
+1. Install Build Tools for WSL
+    * sudo apt install gcc
+1. Install PyCharm
+1. Add Rust Plugin
+   https://intellij-rust.github.io
+1. Configure rust toolchain in PyCharm to point to your WSL toolchain.
+   * Something like C:\Users\<user>\.cargo\bin
+   * Select the download standard library option
 
 
 ACCESSING DOCS
