@@ -44,7 +44,7 @@ Windows
     * Download file at https://visualstudio.microsoft.com/visual-cpp-build-tools/
     * Select C++ build tools
     * click install
-    *
+    * a restart may be needed
 1. Install Build Tools for WSL
     * sudo apt install gcc
 1. Install PyCharm
@@ -62,6 +62,9 @@ ACCESSING DOCS
 2. cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book
     * if directory does not exist try `rustup doc --book` and notice the location
       of the file it tried (unsuccessfully) to open
+    * make a link to this folder so you don't have to remember it next time with this:
+      1. `ln -s <big long folder> ~/rust-book`
+      1. now instead of typing `cd <big long folder>` all the time, just type `cd ~/rust-book`
 3. python3 -m http.server
 4. open web browser to http://localhost:8000/
 
