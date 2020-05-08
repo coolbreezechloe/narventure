@@ -30,6 +30,8 @@ Windows
 
     * open microsoft store
     * search for debian and install it
+    * click launch
+    * << add steps for installing debian >>
     * open debian terminal and run command from
         `https://rustup.rs`:
     * select "proceed with installation"
