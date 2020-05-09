@@ -27,15 +27,14 @@ Windows
     * May need to restart
 
 1. After reset install debian
+   * open microsoft store
+   * search for debian and install it
+   * click launch
 
-    * open microsoft store
-    * search for debian and install it
-    * click launch
-    * << add steps for installing debian >>
-    * open debian terminal and run command from
-        `https://rustup.rs`:
-    * select "proceed with installation"
-    * exit shell and re-start it
+1. Install Rust for WSL (optional)
+   * run the command from `https://rustup.rs` in the terminal
+   * select "proceed with installation"
+   * exit and restart the debian shell
 
 1. Confirm installation with command `rustup toolchain --list`
 1. Install Rust for windows
