@@ -29,10 +29,11 @@ Windows
 1. After reset install debian
    * open microsoft store
    * search for debian and "get" and "install" it
-   * click launch after it is installed
+   * click launch after it is installed. At this point you can close the
+     microsoft store
    * go through the install process which will appear in a text window and
      starts with asking for your new UNIX username
-   * 
+
 
 1. Install Rust for WSL (optional)
    * run the command from `https://rustup.rs` in the terminal
