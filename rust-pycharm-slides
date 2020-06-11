@@ -1,49 +1,16 @@
 SETUP
 =====
 
-Windows
--------
+PyCharm with Rust on Windows
+----------------------------
 
-1. Turn on windows subsytem for linux
-
-    Method1
-    *******
-
-    * Press windows key
-    * Type "Power Shell"
-    * Right click on the icon and select run as administrator
-    * Type
-        `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-    * You may need to restart the computer
-
-    Method2
-    *******
-
-    * press windows key
-    * type "windows features"
-    * press enter
-    * find "Windows Subsystem for Linux" in the list and select it
-    * Press OK
-    * May need to restart
-
-1. After reset install debian
-   * open microsoft store
-   * search for debian and "get" and "install" it
-   * click launch after it is installed. At this point you can close the
-     microsoft store
-   * go through the install process which will appear in a text window and
-     starts with asking for your new UNIX username
-
-
-1. Install Rust for WSL (optional)
-   * run the command from `https://rustup.rs` in the terminal
-   * select "proceed with installation"
-   * exit and restart the debian shell
-
-1. Confirm installation with command `rustup toolchain --list`
 1. Install Rust for windows
-   * go to https://www.rust-lang.org/tools/install
-   * if asked about installing Visual C++ Prerequisites say yes
+   * go to https://www.rust-lang.org
+   * click the install link
+   * download the 64 bit version
+   * if told you need to install Visual C++ Prerequisites quit (say no)
+     and do that first
+   * Once prerequisiites are installed you may continue (say yes)
    * press 1 (proceed)
 1. Install Microsoft Visual C++ Build Tools (for PyCharm)
     * Download file at https://visualstudio.microsoft.com/visual-cpp-build-tools/

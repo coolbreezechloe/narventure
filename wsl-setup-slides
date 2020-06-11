@@ -35,41 +35,26 @@ Windows
      starts with asking for your new UNIX username
 
 
-1. Install Rust for WSL (optional)
+1. Install Rust
    * run the command from `https://rustup.rs` in the terminal
    * select "proceed with installation"
    * exit and restart the debian shell
 
-1. Confirm installation with command `rustup toolchain --list`
-1. Install Rust for windows
-   * go to https://www.rust-lang.org/tools/install
-   * if asked about installing Visual C++ Prerequisites say yes
-   * press 1 (proceed)
-1. Install Microsoft Visual C++ Build Tools (for PyCharm)
-    * Download file at https://visualstudio.microsoft.com/visual-cpp-build-tools/
-    * Select C++ build tools
-    * click install
-    * a restart may be needed
+1. Confirm installation with command `rustup toolchain list`
 1. Install Build Tools for WSL
     * sudo apt install gcc
-1. Install PyCharm
-1. Add Rust Plugin
-   https://intellij-rust.github.io
-1. Configure rust toolchain in PyCharm to point to your WSL toolchain.
-   * Something like C:\Users\<user>\.cargo\bin
-   * Select the download standard library option
 
 
 ACCESSING DOCS
 ==============
 
 1. sudo apt-get install python3
-2. cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book
+2. cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html
     * if directory does not exist try `rustup doc --book` and notice the location
       of the file it tried (unsuccessfully) to open
     * make a link to this folder so you don't have to remember it next time with this:
-      1. `ln -s <big long folder> ~/rust-book`
-      1. now instead of typing `cd <big long folder>` all the time, just type `cd ~/rust-book`
+      1. `ln -s <big long folder> ~/rustdocs`
+      1. now instead of typing `cd <big long folder>` all the time, just type `cd ~/rustdocs`
 3. python3 -m http.server
 4. open web browser to http://localhost:8000/
 
@@ -78,7 +63,7 @@ ACCESSING DOCS
 TERMS
 =====
 
-rustaceans: rust-ah-kins, describes women who program in Rust
+rustaceans: rust-ah-kins, describes people who program in Rust
 
 Constants
 ---------
